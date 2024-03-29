@@ -10,6 +10,8 @@ jobs:
   setup:
     executor: continuation/default
     resource_class: large
+    environment:
+      CIRCLE_REPOSITORY_URL: https://github.com/SparrowNauts-Studios/linux-android-gki-generic.git
     steps:
       - droidian-buildd/checkout
       - droidian-buildd/generate
